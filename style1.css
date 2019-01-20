@@ -3,7 +3,7 @@
 }
 
 header, footer {
-  position: absolute;
+  position: fixed;
   height: 40px;
   width: 100vw;
   max-width: 100%;
@@ -16,6 +16,8 @@ header {
 }
 
 footer {
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
@@ -25,11 +27,11 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #e8ecf2;
+  overflow-x: hidden;
 }
-body h1 {
+body p {
   text-align: center;
-  /* vertical-align: middle; */
-  height: 100%;
 }
 
 .flex-row {
@@ -46,6 +48,12 @@ body h1 {
   font-size: 20px;
   text-decoration: none;
   position: relative;
+  color: black;
+  transition: all 0.5s ease;
+}
+.flex-row a:hover {
+  color: grey;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style1.css.map */
